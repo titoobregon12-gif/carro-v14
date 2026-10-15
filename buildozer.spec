@@ -2,16 +2,14 @@
 title = Carro Pro V14
 package.name = carroprov14
 package.domain = com.taxi.carroprov14
-
-source.dir = .
+source.dir =.
 source.include_exts = py,png,jpg,kv,atlas,json
 version = 14
 requirements = python3,kivy==2.2.0,plyer,pyjnius,android
 orientation = portrait
 fullscreen = 0
 android.permissions = ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION,ACCESS_BACKGROUND_LOCATION,FOREGROUND_SERVICE,FOREGROUND_SERVICE_LOCATION,VIBRATE,WAKE_LOCK,POST_NOTIFICATIONS,INTERNET
-# Quitamos el servicio por ahora para que compile - luego lo agregamos
-# services = carroservice:servicio/service.py:sticky
+android.api = 33
 android.build_tools_version = 33.0.2
 android.minapi = 21
 android.ndk = 25b
